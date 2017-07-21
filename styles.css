@@ -1,0 +1,218 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #5C5C5C;
+  text-align: center;
+}
+/*
+div {
+  border: 1px solid grey;
+}*/
+
+.brown-background {
+  background-color: #AF874E;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  /*padding-top: 20px;*/
+  width: 900px;
+  height: 550px;
+}
+
+.playground {
+  width: 96%;
+  height: 94%;
+  top: 3%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+/*.playground-j1 {
+  width: 50%;
+  height: 100%;
+  display: block;
+  float: left;
+  background-color: #F7F7F7;
+}
+
+.playground-j2 {
+  width: 50%;
+  height: 100%;
+  display: block;
+  float: right;
+  background-color: #FFF;
+}*/
+
+.top {
+  width: 100%;
+  height: 15%;
+}
+
+.middle {
+  width: 100%;
+  height: 44%;
+}
+
+.bottom {
+  width: 100%;
+  height: 40%;
+}
+
+.newGame {
+  padding-top: 15px;
+}
+
+.newGame p {
+  width: 17%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.newGame p:hover {
+  cursor: pointer;
+}
+
+.players {
+  height: 26%;
+  width: 100%;
+}
+
+#p1 {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: block;
+  float: left;
+  color: #5C5C5C;
+}
+
+#p2 {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: block;
+  float: right;
+  color: #8A8A8A;
+}
+
+.global-dice {
+  width: 100%;
+  height: 72%;
+}
+
+.global {
+  font-size: 70px;
+  color: #EE4B48;
+}
+
+#global-p1 {
+  display: inline;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#global-p2 {
+  display: inline;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.dice {
+  height: 100%;
+  display: inline;
+}
+
+.dice img {
+  height: 90px;
+  box-shadow: 0px 0px 30px #e0e0e0;
+}
+
+.divCurrentLeft {
+  height: 100%;
+  width: 35%;
+  float: left;
+}
+
+.divCurrentRight {
+  height: 100%;
+  width: 35%;
+  float: right;
+}
+
+.current {
+  width: 110px;
+  height: 75px;
+  background-color: #EE4B48;
+  display: block;
+  margin: 15%;
+  padding-top: 5px;
+}
+
+#current-p1 {
+  margin-left: 50%;
+}
+
+.p-current {
+  color: #000000;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+#round-p1 {
+  font-weight: bolder;
+  color: #FFF;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+#round-p2 {
+  font-weight: bolder;
+  color: #FFF;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+.roll-hold {
+  width: 29%;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+  margin-top: 30px;
+}
+
+.roll-hold p {
+  margin: 15px 0;
+}
+
+#roll {
+  width: 140px;
+  margin-left: 60px;
+}
+
+#roll:hover {
+  cursor: pointer;
+}
+
+#hold {
+  width: 90px;
+  margin-left: 85px;
+}
+
+#hold:hover {
+  cursor: pointer;
+}
+
+.icon {
+   font-size: 27px;
+   padding: 5px;
+   color: #EE4B48;
+ }
+
+.ion-record {
+  font-size: 15px;
+}
