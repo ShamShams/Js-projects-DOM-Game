@@ -16,6 +16,24 @@ pts2.innerHTML = global2;
 
 var turnP1 = true;
 var turnP2 = false;
+turn();
+
+function turn() {
+  if(turnP1 === true) {
+    document.getElementById("p1").style.fontWeight = "bold";
+    document.getElementById("p1").innerHTML = "PLAYER 1  <i class='icon ion-record'>";
+  } else {
+    document.getElementById("p1").style.fontWeight = "normal";
+    document.getElementById("p1").innerHTML = "PLAYER 1";
+  };
+  if(turnP2 === true) {
+   document.getElementById("p2").style.fontWeight = "bold";
+   document.getElementById("p2").innerHTML = "PLAYER 2  <i class='icon ion-record'>";
+ } else {
+   document.getElementById("p2").style.fontWeight = "normal";
+   document.getElementById("p2").innerHTML = "PLAYER 2";
+ }
+}
 
 function newGame() {
   global1 = 0;
@@ -28,14 +46,9 @@ function newGame() {
   current2.innerHTML = round2;
   turnP1 = true;
   turnP2 = false;
-  setTurn();
+  turn();
+  document.getElementById("dice-img").src = "";
 }
-
-function setTurn() {
-  turnP1 === true ? document.getElementById("p1").style.fontWeight = "bold" : document.getElementById("p1").style.fontWeight = "normal";
-  turnP2 === true ? document.getElementById("p2").style.fontWeight = "bold" : document.getElementById("p2").style.fontWeight = "normal";
-}
-
 
 function rollDice() {
   var dice = Math.floor(Math.random() * (6 -1 +1)) + 1;
@@ -61,7 +74,7 @@ function rollDice() {
       turnP1 = true;
     }
   }
-  setTurn();
+  turn();
 }
 
 function hold() {
@@ -71,9 +84,10 @@ function hold() {
     round1 = 0;
     current1.innerHTML = round1;
     if(global1 >= 100) {
-      alert("Bravo Joueur 1, vous avez gagné !");
+      alert("PLAYER 1 WINS !");
       newGame();
     } else {
+      document.getElementById("dice-img").src = "";
       turnP1 = false;
       turnP2 = true;
     }
@@ -83,12 +97,13 @@ function hold() {
     round2 = 0;
     current2.innerHTML = round2;
     if(global2 >= 100) {
-      alert("Bravo Joueur 2, vous avez gagné !");
+      alert("PLAYER 2 WINS !");
       newGame();
     } else {
+      document.getElementById("dice-img").src = "";
       turnP2 = false;
       turnP1 = true;
     }
   }
-  setTurn();
+  turn();
 }

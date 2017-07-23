@@ -2,33 +2,24 @@ body {
   font-family: 'Lato', sans-serif;
   color: #5C5C5C;
   text-align: center;
+  background-image: url(images/background.jpg);
 }
 
 /*div {
   border: 1px solid grey;
 }*/
 
-.brown-background {
-  background-color: #AF874E;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  /*padding-top: 20px;*/
-  width: 900px;
-  height: 550px;
-}
-
 .playground {
-  width: 96%;
-  height: 94%;
-  top: 3%;
+  width: 850px;
+  height: 500px;
+  top: 40px;
   position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #F7F7F7;
+  background-color: #F5F5F5;
+  box-shadow: 0px 0px 30px #494848;
 }
 
 .top {
@@ -61,6 +52,7 @@ body {
 
 .newGame p:hover {
   cursor: pointer;
+  color: #252525;
 }
 
 .newGame p:active {
@@ -73,18 +65,22 @@ body {
 }
 
 #p1 {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 14%;
+  margin-right: 0;
+  width: 180px;
   display: block;
   float: left;
+  text-align: left;
   font-weight: normal;
 }
 
 #p2 {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 0;
+  margin-right: 11%;
+  width: 180px;
   display: block;
   float: right;
+  text-align: left;
   font-weight: normal;
 }
 
@@ -100,26 +96,27 @@ body {
 }
 
 #global1 {
-  display: inline;
-  margin-left: 15%;
-  margin-right: 17%;
+  display: inline-block;
+  width: 150px;
+  margin-left: 11%;
+  margin-right: 14%;
 }
 
 #global2 {
-  display: inline;
-  margin-left: 15%;
-  margin-right: 15%;
+  display: inline-block;
+  width: 150px;
+  margin-left: 10%;
+  margin-right: 12%;
 }
 
 .dice {
-  height: 100%;
-  display: inline;
+  display: inline-block;
+  width: 100px;
 }
 
 .dice img {
   height: 90px;
   box-shadow: 0px 0px 30px #e0e0e0;
-  position: relative;
 }
 
 .divCurrentLeft {
@@ -186,6 +183,7 @@ body {
 
 #roll:hover {
   cursor: pointer;
+  color: #252525;
 }
 
 #roll:active {
@@ -199,6 +197,7 @@ body {
 
 #hold:hover {
   cursor: pointer;
+  color: #252525;
 }
 
 #hold:active {
