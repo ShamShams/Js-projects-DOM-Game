@@ -1,5 +1,3 @@
-// TODO: Ajouter RÈGLES DU JEU :\n\nVous êtes 2 joueurs qui jouez chacun votre tour.\n\nÀ chaque tour, vous pouvez lancer le dé autant de fois que vous voulez en cliquant sur ROLL DICE. Chaque résultat est ajouté à votre score CURRENT. \n\nMais si vous obtenez 1, votre score CURRENT se perd et c'est à votre adversaire de jouer.\n\nVous pouvez choisir d'ajouter votre score CURRENT à votre score total (en rouge) en cliquant sur HOLD. Après cela, votre score CURRENT retombe à 0 et c'est à votre adversaire de jouer.\n\nLe premier à atteindre un score total de 100 remporte la partie.\n\nÀ VOUS DE JOUER!")
-
 var round1 = 0;
 var current1 = document.getElementById("round1");
 current1.innerHTML = round1;

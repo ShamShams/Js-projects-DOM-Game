@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PIG Game</title>
+  <link rel="stylesheet" href="game.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+  <div class="playground">
+
+    <div class="top">
+      <div class="newGame">
+        <p onclick="newGame()"><i class="icon ion-ios-plus-outline"></i> NEW GAME</p>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="players">
+        <h1 id="p1">PLAYER 1</i></h1>
+        <h1 id="p2">PLAYER 2</h1>
+      </div>
+      <div class="global-dice">
+        <div class="global" id="global1"></div>
+        <div class="dice">
+          <img id="dice-img" src="">
+        </div>
+        <div class="global" id="global2"></div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="divCurrentLeft">
+        <div class="current" id="current-p1">
+          <p class="p-current">CURRENT</p>
+          <p id="round1"></p>
+        </div>
+      </div>
+      <div class="roll-hold">
+        <div class="roll">
+          <p id="roll" onclick="rollDice()"><i class="icon ion-ios-loop"></i> ROLL DICE</p>
+        </div>
+        <div class="hold">
+          <p id="hold" onclick="hold()"><i class="icon ion-ios-download-outline"></i> HOLD</p>
+        </div>
+      </div>
+      <div class="divCurrentRight">
+        <div class="current" id="current-p2">
+          <p class="p-current">CURRENT</p>
+          <p id="round2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
