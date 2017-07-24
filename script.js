@@ -1,4 +1,4 @@
-alert("RÈGLES DU JEU :\n\nVous êtes 2 joueurs qui jouez chacun votre tour.\n\nÀ chaque tour, vous pouvez lancer le dé autant de fois que vous voulez en cliquant sur ROLL DICE. Chaque résultat est ajouté à votre score CURRENT. \n\nMais si vous obtenez 1, votre score CURRENT se perd et c'est à votre adversaire de jouer.\n\nVous pouvez choisir d'ajouter votre score CURRENT à votre score total (en rouge) en cliquant sur HOLD. Après cela, votre score CURRENT retombe à 0 et c'est à votre adversaire de jouer.\n\nLe premier à atteindre un score total de 100 remporte la partie.\n\nÀ VOUS DE JOUER!")
+// TODO: Ajouter RÈGLES DU JEU :\n\nVous êtes 2 joueurs qui jouez chacun votre tour.\n\nÀ chaque tour, vous pouvez lancer le dé autant de fois que vous voulez en cliquant sur ROLL DICE. Chaque résultat est ajouté à votre score CURRENT. \n\nMais si vous obtenez 1, votre score CURRENT se perd et c'est à votre adversaire de jouer.\n\nVous pouvez choisir d'ajouter votre score CURRENT à votre score total (en rouge) en cliquant sur HOLD. Après cela, votre score CURRENT retombe à 0 et c'est à votre adversaire de jouer.\n\nLe premier à atteindre un score total de 100 remporte la partie.\n\nÀ VOUS DE JOUER!")
 
 var round1 = 0;
 var current1 = document.getElementById("round1");
@@ -23,17 +23,25 @@ turn();
 function turn() {
   if(turnP1 === true) {
     document.getElementById("p1").style.fontWeight = "bold";
+    document.getElementById("global1").style.fontWeight = "bold";
     document.getElementById("p1").innerHTML = "PLAYER 1  <i class='icon ion-record'>";
+    document.querySelector(".playground").style.backgroundImage = "url(images/backgroundP1.png)";
   } else {
     document.getElementById("p1").style.fontWeight = "normal";
+    document.getElementById("global1").style.fontWeight = "normal";
     document.getElementById("p1").innerHTML = "PLAYER 1";
+    document.querySelector(".playground").style.backgroundImage = "url(images/backgroundP2.png)";
   };
   if(turnP2 === true) {
    document.getElementById("p2").style.fontWeight = "bold";
+   document.getElementById("global2").style.fontWeight = "bold";
    document.getElementById("p2").innerHTML = "PLAYER 2  <i class='icon ion-record'>";
+   document.querySelector(".playground").style.backgroundImage = "url(images/backgroundP2.png)";
  } else {
    document.getElementById("p2").style.fontWeight = "normal";
+   document.getElementById("global2").style.fontWeight = "normal";
    document.getElementById("p2").innerHTML = "PLAYER 2";
+   document.querySelector(".playground").style.backgroundImage = "url(images/backgroundP1.png)";
  }
 }
 
