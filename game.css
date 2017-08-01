@@ -1,0 +1,219 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #5C5C5C;
+  text-align: center;
+  background-image: url(images/background.jpg);
+}
+
+/*div {
+  border: 1px solid grey;
+}*/
+
+.playground {
+  width: 850px;
+  height: 500px;
+  top: 40px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(images/backgroundP1.png);
+  background-position: center;
+  background-size: contain;
+  box-shadow: 0px 0px 30px #494848;
+}
+
+.top {
+  width: 100%;
+  height: 15%;
+}
+
+.middle {
+  width: 100%;
+  height: 44%;
+}
+
+.bottom {
+  width: 100%;
+  height: 40%;
+}
+
+.newGame {
+  padding-top: 15px;
+}
+
+.newGame p {
+  width: 17%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.newGame p:hover {
+  cursor: pointer;
+  color: #252525;
+}
+
+.newGame p:active {
+  border: 1px inset #8A8A8A;
+}
+
+.players {
+  height: 26%;
+  width: 100%;
+}
+
+#p1 {
+  margin-left: 14%;
+  margin-right: 0;
+  width: 180px;
+  display: block;
+  float: left;
+  text-align: left;
+  font-weight: normal;
+}
+
+#p2 {
+  margin-left: 0;
+  margin-right: 11%;
+  width: 180px;
+  display: block;
+  float: right;
+  text-align: left;
+  font-weight: normal;
+}
+
+.global-dice {
+  width: 100%;
+  height: 72%;
+}
+
+.global {
+  font-size: 70px;
+  color: #EE4B48;
+}
+
+#global1 {
+  display: inline-block;
+  width: 150px;
+  margin-left: 11%;
+  margin-right: 14%;
+  font-weight: normal;
+}
+
+#global2 {
+  display: inline-block;
+  width: 150px;
+  margin-left: 10%;
+  margin-right: 12%;
+  font-weight: normal;
+}
+
+.dice {
+  display: inline-block;
+  width: 100px;
+}
+
+.dice img {
+  height: 90px;
+  box-shadow: 0px 0px 30px #d5d5d5;
+}
+
+.divCurrentLeft {
+  height: 100%;
+  width: 35%;
+  float: left;
+}
+
+.divCurrentRight {
+  height: 100%;
+  width: 35%;
+  float: right;
+}
+
+.current {
+  width: 110px;
+  height: 75px;
+  background-color: #EE4B48;
+  display: block;
+  margin: 15%;
+  padding-top: 5px;
+}
+
+#current-p1 {
+  margin-left: 50%;
+}
+
+.p-current {
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#round1 {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+#round2 {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.roll-hold {
+  width: 29%;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+  margin-top: 30px;
+}
+
+.roll-hold p {
+  margin: 15px 0;
+}
+
+#roll {
+  width: 140px;
+  margin-left: 60px;
+}
+
+#roll:hover {
+  cursor: pointer;
+  color: #252525;
+}
+
+#roll:active {
+  border: 1px inset #8A8A8A;
+}
+
+#hold {
+  width: 90px;
+  margin-left: 85px;
+}
+
+#hold:hover {
+  cursor: pointer;
+  color: #252525;
+}
+
+#hold:active {
+  border: 1px inset #8A8A8A;
+}
+
+.icon {
+   font-size: 27px;
+   padding: 5px;
+   color: #EE4B48;
+ }
+
+.ion-record {
+  font-size: 15px;
+}
