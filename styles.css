@@ -58,10 +58,11 @@ p {
   font-size: 25px;
   border: 2px solid;
   border-radius: 4px;
-  padding: 7px;
+  padding: 7px 15px;
 }
 
 .btn:hover {
   color: #FFF;
   background-color: #EE4B48;
+  transition: 0.3s;
 }
